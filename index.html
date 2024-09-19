@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="Score_Board">
+      <div class="left">
+        <h1>ROCK PAPER SCISSORS</h1>
+      </div>
+      <div class="right"></div>
+        <div class="CompScore">
+            <p class="CS"><span>COMPUTER</span> <span>SCORE</span></p>
+            <span class="C_Score">0</span>
+        </div>
+        <div class="YourScore">
+            <p class="YS"><span>YOUR</span> <span>SCORE</span></p>
+            <span class="Y_Score">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="PlayGround">
+        <div class="Choice" id="Rock"><img src="./Images/Rock.png" alt=""></div>
+        <div class="Choice" id="Paper"><img src="./Images/Paper.png" alt=""></div>
+        <div class="Choice" id="Scissor"><img src="./Images/Scissor.png" alt=""></div>
+    </div>
+   
+        <button class="Rules" onclick="handleopen()" >Rules</button>
+
+        <div class="Modal">
+            <span class="Close_Modal" onclick="handleclose()">X</span>
+            <h2>Game Rules</h2>
+           <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li> 
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </div>
+
+        <!-- <----------------------------------------------------------------------------------------------------------------------->
+                    <!-- --------------------Result Board-------------------------- -->
+
+         <div class="Result-Board">
+
+          <span class="u-choice">YOU PICEKD</span>
+            <div class="User-Circle-1">
+              <div class="User-Circle-2">
+                <div class="User-Circle-3">
+                 <div class="User-Result">
+                  <img src="./Images/Rock.png" alt="" >
+                 </div>
+                </div>
+              </div>
+            </div>
+             
+            <div class="result">
+              <h3>YOU WIN AGAINST PC</h3>
+              <button class="replay" onclick="playground()">PLAY AGAIN</button>
+            </div>
+
+            <span class="c-choice">PC PICKED</span>
+            <div class="Comp-Circle-1">
+              <div class="Comp-Circle-2">
+                <div class="Comp-Circle-3">
+                  <div class="Comp-Result">
+                    <img src="./Images/Scissor.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            </div> 
+            
+         </div>  
+         
+         <div class="bottom-buttons">
+            <button id="rules" onclick="handleopen()">RULES</button>
+            <button id="next" onclick="next()">NEXT</button>
+         </div>
+
+         <div class="hurray">
+            <img src="./Images/Stars.png" alt="" class="star">
+            <img src="./Images/Cup.png" alt="" class="cup">
+            <span class="hurr">HURRAY!!</span>
+            <span class="ywtg">YOU WON THE GAME</span>
+            <button class="p-again" onclick="playground()">PLAY AGAIN</button>
+         </div>
+  </body>
+     <script src="./Script.js"></script>
+    
+</html>
