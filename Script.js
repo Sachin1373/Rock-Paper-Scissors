@@ -11,15 +11,15 @@ function handleopen() {
 // <----------------------------------------------------------------------------------------------->
 
 
-// Initialize scores from localStorage or default to 0
+
 let UserScore = parseInt(localStorage.getItem('UserScore')) || 0;
 let CompScore = parseInt(localStorage.getItem('CompScore')) || 0;
 
-// Correctly initialize the User and Computer score elements
+
 const User = document.querySelector('.Y_Score');
 const Computer = document.querySelector('.C_Score');
 
-// Set initial values for scores
+
 User.innerHTML = UserScore;
 Computer.innerHTML = CompScore;
 

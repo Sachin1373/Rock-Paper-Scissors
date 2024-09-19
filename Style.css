@@ -498,7 +498,7 @@ body{
 
 .User-Circle-1, .User-Circle-2, .User-Circle-3,
 .Comp-Circle-1, .Comp-Circle-2, .Comp-Circle-3 {
-    position:relative; /* Ensure the parent is positioned relative */
+    position:relative; 
 }
 
 .User-Result {
@@ -514,10 +514,10 @@ body{
     border: 16px solid #0074B6;
     border-radius: 96px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-    position: fixed; /* Ensure the child can be centered within its parent */
+    position: fixed; 
     top: 54.5%;
     left: 28.7%;
-    transform: translate(-50%, -50%); /* Center the child both vertically and horizontally */
+    transform: translate(-50%, -50%); 
 }
 .Comp-Result {
     width: 150px;
@@ -532,10 +532,10 @@ body{
     border: 16px solid #0074B6;
     border-radius: 96px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-    position: fixed; /* Ensure the child can be centered within its parent */
+    position: fixed; 
     top: 54.5%;
     left: 71%;
-    transform: translate(-50%, -50%); /* Center the child both vertically and horizontally */
+    transform: translate(-50%, -50%); 
 }
 
 .hurray{
@@ -543,7 +543,7 @@ body{
     flex-direction: column;
     height: 100vh;
     align-items: center;
-    /* justify-content: center; */
+   
 }
 .cup{
     position: absolute;
