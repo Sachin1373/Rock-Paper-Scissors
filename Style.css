@@ -38,6 +38,7 @@ body{
     top: 77px;
     left: 803px;
     background-color: white;
+    color: #656565;
     border-radius: 9px;
     font-family: Roboto;
     font-size: 17px;
@@ -55,6 +56,7 @@ body{
 .C_Score{
     margin-top: 10px;
     font-family: Roboto;
+    color:#252525;
     font-size: 68px;
     font-weight: 700;
 }
@@ -70,6 +72,7 @@ body{
     top: 77px;
     left: 980px;
     background-color: white;
+    color: #656565;
     border-radius: 9px;
     font-size: 17px;
     font-weight: 600;
@@ -84,6 +87,7 @@ body{
 .Y_Score{
     margin-top: 10px;
     font-family: Roboto;
+    color:#252525;
     font-size: 68px;
     font-weight: 700;
 }
@@ -418,26 +422,26 @@ body{
 .User-Circle-3{
     width: 150px;
     height: 150px;  
-    position: absolute;
+    position: fixed;
     display: block;
     border-radius: 140px;
-    
-
+   
 }
 .User-Circle-2{
     width: 200px;
-    height: 200px;  
+    height: 200px;
+    position: fixed;  
     display: block;
     border-radius: 160px;
-    
-    
+ 
 }
 .User-Circle-1{
     width: 250px;
-    height: 250px;  
+    height: 250px; 
+    position: fixed; 
     display: block;
     border-radius: 180px;
-    
+   
 }
 .user-won-1{
     border:  25px solid #2E9A2563;  
@@ -499,9 +503,12 @@ body{
 .User-Circle-1, .User-Circle-2, .User-Circle-3,
 .Comp-Circle-1, .Comp-Circle-2, .Comp-Circle-3 {
     position:relative; 
+    
 }
 
+
 .User-Result {
+    
     width: 150px;
     height: 150px;
     display: flex;
@@ -518,6 +525,8 @@ body{
     top: 54.5%;
     left: 28.7%;
     transform: translate(-50%, -50%); 
+    
+   
 }
 .Comp-Result {
     width: 150px;
@@ -536,6 +545,7 @@ body{
     top: 54.5%;
     left: 71%;
     transform: translate(-50%, -50%); 
+   
 }
 
 .hurray{
@@ -545,13 +555,26 @@ body{
     align-items: center;
    
 }
-.cup{
+.cup {
     position: absolute;
     top: 30%;
+    animation: grow-shrink 1.5s ease-out infinite;
 }
-.star{
+
+.star {
     position: absolute;
     top: 15%;
+    animation: grow-shrink 1.5s ease-in-out infinite;
+}
+
+/* Grow and shrink animation */
+@keyframes grow-shrink {
+    0%, 100% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.2); /* Grow to 120% */
+    }
 }
 .hurray{
     display:none; /*flex*/
@@ -567,6 +590,7 @@ body{
     line-height: 106.64px;
     letter-spacing: 0.1em;
     text-align: center;
+    
 }
 .ywtg{
     position: absolute;
@@ -599,3 +623,4 @@ body{
     }
    
 }
+
